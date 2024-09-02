@@ -1,0 +1,23 @@
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+}
+
+.btn-openmenu {
+  border: none;
+  /* color: #fff; */
+}
+
+.btn-openmenu:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-closemenu:focus {
+  outline: none;
+  box-shadow: none;
+}
