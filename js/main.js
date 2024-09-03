@@ -1,1 +1,1 @@
-import { mybutton } from "./back-to-top.js";
+import { btnTop } from "./back-to-top.js";

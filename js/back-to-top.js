@@ -1,5 +1,5 @@
 //Get the button
-export let mybutton = document.getElementById("btn-back-to-top");
+export let btnTop = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -11,13 +11,13 @@ function scrollFunction() {
     document.body.scrollTop > 1000 ||
     document.documentElement.scrollTop > 1000
   ) {
-    mybutton.style.display = "block";
+    btnTop.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    btnTop.style.display = "none";
   }
 }
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+btnTop.addEventListener("click", backToTop);
 
 function backToTop() {
   document.body.scrollTop = 0;
