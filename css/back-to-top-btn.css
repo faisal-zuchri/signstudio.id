@@ -1,0 +1,16 @@
+#btn-back-to-top {
+  background-color: #777777;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  display: none;
+  padding: 8px;
+  transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+}
