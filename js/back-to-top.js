@@ -8,8 +8,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 1000 ||
-    document.documentElement.scrollTop > 1000
+    document.body.scrollTop > 7000 ||
+    document.documentElement.scrollTop > 7000
   ) {
     btnTop.style.display = "block";
   } else {
