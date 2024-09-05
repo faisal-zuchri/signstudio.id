@@ -45,22 +45,22 @@
     />
     <meta
       name="theme-color"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: light)"
     />
     <meta
       name="theme-color"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: dark)"
     />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: light)"
     />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: dark)"
     />
     <meta name="format-detection" content="telephone=no" />
@@ -91,7 +91,7 @@
       class="navbar py-0 px-0 fixed-top"
       style="background-color: #fff; border-bottom: 1px solid #cccccc"
     >
-      <div class="container-fluid">
+      <div class="container">
         <a
           class="logo-brand navbar-brand"
           href="https://signstudio.netlify.app/"
@@ -120,7 +120,7 @@
             fill="currentColor"
             class="bi bi-list"
             viewBox="0 0 16 16"
-            style="color: #555"
+            style="color: #333"
           >
             <path
               fill-rule="evenodd"
@@ -133,33 +133,56 @@
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          style="background-color: #333"
         >
-          <div class="offcanvas-header" style="border-bottom: 1px solid #ccc">
+          <div
+            class="offcanvas-header justify-content-between"
+            style="border-bottom: 1px solid #444"
+          >
             <h5
               class="offcanvas-title"
               id="offcanvasNavbarLabel"
-              style="color: #555; margin-top: 15px"
+              style="color: whitesmoke; margin-top: 0px"
             >
               Menu
             </h5>
             <button
               type="button"
-              class="btn-closemenu btn-close"
+              class="btn-closemenu"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              style="margin-right: -2px; margin-top: 3px"
-            ></button>
+              style="margin-right: -2px; border: none; background: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-x-lg text-light"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                />
+              </svg>
+            </button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="text-light nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#why-us">TENTANG KAMI</a>
-                <a class="nav-link" href="about-us.html">HARGA</a>
-                <a class="nav-link" href="about-us.html">PORTOFOLIO</a>
-                <a class="nav-link" href="about-us.html">KONTAK</a>
+                <a class="text-light nav-link" href="about-us.html">HARGA</a>
+                <a class="text-light nav-link" href="about-us.html"
+                  >PORTOFOLIO</a
+                >
+                <a class="text-light nav-link" href="about-us.html">KONTAK</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a
@@ -909,7 +932,7 @@
 
     <footer
       id="footer"
-      style="padding-block: 3.5rem 2.5rem; background-color: #444"
+      style="padding-block: 3.5rem 1rem; background-color: #333"
     >
       <div class="container">
         <div class="text-start mx-2 pe-5">
@@ -927,9 +950,9 @@
           </p>
         </div>
         <div class="mx-2 mt-5">
-          <h1 class="fw-bold text-light mb-3" style="font-size: 1rem">MENU</h1>
+          <h1 class="fw-bold text-light" style="font-size: 1rem">MENU</h1>
 
-          <ul class="m-o p-0">
+          <ul class="m-o p-0 mt-4">
             <li>
               <a
                 href="https://signstudio.netlify.app/"
@@ -939,7 +962,7 @@
               >
             </li>
 
-            <li>
+            <li class="mt-2">
               <a
                 href="https://signstudio.netlify.app/"
                 class="fw-normal text-light"
@@ -948,7 +971,7 @@
               >
             </li>
 
-            <li>
+            <li class="mt-2">
               <a
                 href="https://signstudio.netlify.app/"
                 class="fw-normal text-light"
@@ -957,7 +980,7 @@
               >
             </li>
 
-            <li>
+            <li class="mt-2">
               <a
                 href="https://signstudio.netlify.app/"
                 class="fw-normal text-light"
@@ -969,86 +992,73 @@
         </div>
 
         <div class="mx-2 mt-5">
-          <h1 class="fw-bold text-light mb-3" style="font-size: 1rem">
+          <h1 class="fw-bold text-light" style="font-size: 1rem">
             HUBUNGI KAMI
           </h1>
 
-          <ul class="m-o p-0">
+          <ul class="m-o p-0 mt-4">
             <li>
               <a
                 href="tel:+62888123321"
                 class="fw-normal text-light"
                 style="font-size: 1rem; text-decoration: none"
-                ><svg
+              >
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-telephone-inbound-fill me-1"
+                  class="bi bi-telephone me-2"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0"
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
                   />
                 </svg>
                 +62 888 123 321
               </a>
             </li>
 
-            <li>
-              <p
-                class="fw-normal text-light"
-                style="font-size: 1rem; text-decoration: none"
-              >
+            <li class="mt-3 mb-0">
+              <p class="fw-normal text-light" style="font-size: 1rem">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-envelope-at-fill me-1"
+                  class="bi bi-envelope me-2"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
-                  />
-                  <path
-                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
                   />
                 </svg>
                 hello@signstudio.id
               </p>
             </li>
 
-            <li>
-              <p
-                class="fw-normal text-light"
-                style="font-size: 1rem; margin-top: -0.9rem"
-              >
+            <li class="mt-0">
+              <p class="fw-normal text-light" style="font-size: 1rem">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-house-door-fill me-1"
+                  class="bi bi-house-door me-2"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
                   />
                 </svg>
                 Jl. Prima Psr. VII, Deli Serdang,<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sumatera Utara
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sumatera Utara
               </p>
             </li>
           </ul>
         </div>
-      </div>
-    </footer>
 
-    <section id="copy" style="padding-block: 3rem; background-color: #333">
-      <div class="container">
-        <div class="text-center">
+        <div class="text-center mt-5 py-5" style="border-top: #444 1px solid">
           <p class="fs-6 fw-normal text-light">
             &copy; 2024 Signstudio. All rights reserved.
           </p>
@@ -1057,7 +1067,8 @@
             href="https://www.instagram.com/signstudio.id/"
             target="_blank"
             class="fs-6 fw-normal text-light me-2"
-            ><svg
+          >
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1070,8 +1081,12 @@
               /></svg
           ></a>
 
-          <a href="" target="_blank" class="fs-6 fw-normal text-light"
-            ><svg
+          <a
+            href="https://signstudio.netlify.app/"
+            target="_blank"
+            class="fs-6 fw-normal text-light me-0"
+          >
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1085,7 +1100,7 @@
           ></a>
         </div>
       </div>
-    </section>
+    </footer>
 
     <!-- back to top button -->
     <button
