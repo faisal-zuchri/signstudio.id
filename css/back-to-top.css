@@ -1,7 +1,7 @@
 #btn-back-to-top {
   background-color: #444;
-  bottom: 25px;
-  right: 20px;
+  bottom: 3vh;
+  right: 5vw;
   padding: 12px;
   z-index: 99;
   position: fixed;
