@@ -5,37 +5,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signstudio</title>
+    <title>Signstudio - Jasa Fotografi Untuk Semua Kebutuhan Anda!</title>
 
     <!-- SEO tag -->
     <meta name="author" content="signstudio" />
     <meta name="language" content="Indonesia" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="googlebot" content="index, follow, max-image-preview:large" />
-    <meta name="title" content="Signstudio" />
-    <meta name="description" content="https://signstudio.id/" />
-    <meta property="og:title" content="Signstudio" />
-    <meta property="og:description" content="Signstudio" />
+    <meta
+      name="title"
+      content="Signstudio - Jasa Fotografi Untuk Semua Kebutuhan Anda!"
+    />
+    <!-- <meta name="description" content="https://signstudio.id/" /> -->
+    <!-- <meta property="og:title" content="Signs" /> -->
+    <meta
+      property="og:description"
+      content="Semua jasa fotografi mulai dari 500.000!"
+    />
     <meta
       property="og:image"
-      content="https://signstudio.netlify.app/assets/img/logo/icon-sign.ico"
+      content="https://signstudio.netlify.app/assets/img/logo/favicon.ico"
     />
     <meta
       property="og:image:secure_url"
-      content="https://signstudio.netlify.app/assets/img/logo/icon-sign.ico"
+      content="https://signstudio.netlify.app/assets/img/logo/favicon.ico"
     />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Signstudio" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="id_ID" />
-    <meta property="og:url" content="https://signstudio.id/" />
+    <!-- <meta property="og:url" content="https://signstudio.id/" /> -->
     <meta property="og:site_name" content="Signstudio" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
 
     <!-- appearance -->
     <meta name="mobile-web-app-capable" content="yes" />
@@ -45,24 +45,25 @@
     />
     <meta
       name="theme-color"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: light)"
     />
     <meta
       name="theme-color"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: dark)"
     />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: light)"
     />
     <meta
       name="apple-mobile-web-app-status-bar-style"
-      content="#555"
+      content="#333"
       media="(prefers-color-scheme: dark)"
     />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="color-scheme" content="dark" />
     <link rel="canonical" href="https://signstudio.id/" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -74,21 +75,30 @@
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
+    <!-- bootstrap framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <nav class="navbar py-3 px-0" style="background-color: #555">
-      <div class="container-fluid">
-        <a
-          class="logo-brand navbar-brand"
-          href="https://signstudio.netlify.app/"
-        >
+    <nav
+      class="navbar py-0 px-0 fixed-top"
+      style="background-color: #fff; border-bottom: 1px solid #ccc"
+    >
+      <div class="container">
+        <a class="logo-brand navbar-brand" href="./index.html">
           <img
-            src="./assets/img/logo/logo-sign.png"
+            src="./assets/img/logo/logo-sign-dark.jpeg"
             alt=""
             width="150"
-            height="40"
+            height="100%"
+            style="margin-left: -1.25rem"
           />
         </a>
         <button
@@ -102,12 +112,12 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="24"
+            height="24"
             fill="currentColor"
             class="bi bi-list"
             viewBox="0 0 16 16"
-            style="color: #fff"
+            style="color: #333"
           >
             <path
               fill-rule="evenodd"
@@ -116,34 +126,74 @@
           </svg>
         </button>
         <div
-          class="offcanvas offcanvas-end"
+          class="nav-canvas offcanvas offcanvas-end w-100"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          style="
+            background-color: #333;
+            border-left: 2px solid #333;
+            border-right: 2px solid #333;
+            border-bottom: 2px solid #333;
+          "
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <div
+            class="offcanvas-header justify-content-between"
+            style="border-bottom: 1px solid #444"
+          >
+            <h5
+              class="offcanvas-title"
+              id="offcanvasNavbarLabel"
+              style="color: whitesmoke; margin-top: 0px"
+            >
+              Menu
+            </h5>
             <button
               type="button"
-              class="btn-closemenu btn-close"
+              class="btn-closemenu"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
+              style="border: none; background: none; margin-right: -0.5rem"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-x-lg text-light"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                />
+              </svg>
+            </button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="text-light nav-link active"
                   aria-current="page"
-                  href="https://signstudio.netlify.app/"
-                  >Home</a
+                  href="./index.html"
+                  >HOME</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#why-us">Why Us</a>
+                <a class="text-light nav-link" href="./about-us.html"
+                  >TENTANG KAMI</a
+                >
+                <a class="text-light nav-link" href="./price-list.html"
+                  >LIST HARGA</a
+                >
+                <a class="text-light nav-link" href="about-us.html"
+                  >PORTOFOLIO</a
+                >
+                <a class="text-light nav-link" href="about-us.html"
+                  >KONTAK KAMI</a
+                >
               </li>
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -163,62 +213,76 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
-            <!-- <form class="d-flex mt-3" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> -->
           </div>
         </div>
       </div>
     </nav>
 
-    <section id="landing-page" style="padding-block: 0">
+    <section id="landing-page" style="padding-block: 3.5rem 0">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="text-center">
-              <img
-                src="./assets/img/1.jpg"
-                class="d-block w-100 h-100"
-                style="object-fit: cover"
-                alt=""
-              />
-
-              <!-- <button
-                type="button"
-                class="btn btn-primary"
-                style="margin-top: -7rem"
-              >
-                Primary
-              </button> -->
-            </div>
-          </div>
-          <div class="carousel-item">
+          <div class="carousel-item active" data-bs-interval="10000">
             <img
-              src="./assets/img/2.jpg"
-              class="d-block w-100 h-100"
-              style="object-fit: cover"
+              src="./assets/img/landing-page-1.jpg"
+              class="d-block object-fit-cover"
+              width="100%"
+              height="325"
               alt=""
             />
           </div>
-          <div class="carousel-item">
+
+          <div class="carousel-item" data-bs-interval="10000">
             <img
-              src="./assets/img/3.jpg"
-              class="d-block w-100 h-100"
-              style="object-fit: cover"
+              src="./assets/img/landing-page-2.jpg"
+              class="d-block object-fit-cover"
+              width="100%"
+              height="325"
+              alt=""
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./assets/img/landing-page-3.jpg"
+              class="d-block object-fit-cover"
+              width="100%"
+              height="325"
+              alt=""
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./assets/img/landing-page-4.jpg"
+              class="d-block object-fit-cover"
+              width="100%"
+              height="325"
+              alt=""
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./assets/img/landing-page-5.jpg"
+              class="d-block object-fit-cover"
+              width="100%"
+              height="325"
+              alt=""
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./assets/img/landing-page-6.jpg"
+              class="d-block object-fit-cover"
+              width="100%"
+              height="325"
               alt=""
             />
           </div>
@@ -226,11 +290,233 @@
       </div>
     </section>
 
+    <section style="padding-block: 2.5rem">
+      <div class="container">
+        <div class="text-center px-4">
+          <h1 class="fs-1 fw-bold" style="color: #333">Tentang Kami</h1>
+
+          <p class="text-start fs-6 fw-normal mt-4" style="color: #333">
+            Sign Studio memperkuat pemasaran brand Anda dengan pesan visual yang
+            efektif melalui foto & video. Kami percaya platform media digital
+            dapat digunakan dalam memaksimalkan promosi produk dan jasa di era
+            modern, demi mencapai target penjualan. Untuk mencapai itu kami
+            selalu berusaha membantu klien kami menciptakan alat promosi paling
+            efektif namun kreatif, dalam bentuk produksi fotografi dan / atau
+            videografi. Team kami konsisten untuk bekerja secara kreatif dalam
+            merancang, mengembangkan, dan melakukan produksi foto dan video demi
+            menjangkau target audiens anda. Misi kami tidak hanya memproduksi
+            visual yang baik melainkan mengoptimalkan pemasaran hingan memenuhi
+            tujuan bisnis Anda.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      style="padding-block: 3.5rem 1rem; background-color: #333"
+    >
+      <div class="container">
+        <div class="text-start mx-2">
+          <img
+            src="./assets/img/logo/logo-sign-light.png"
+            width="125"
+            height="100%"
+            alt=""
+          />
+
+          <p class="mt-4 pe-5 fs-6 fw-normal text-light">
+            Sign Studio merupakan jasa fotografi yang berlokasi di Medan,
+            Sumatera Utara. Kami menyediakan berbagai macam konsep foto yang
+            Anda butuhkan.
+          </p>
+        </div>
+        <div class="mx-2 mt-5">
+          <h1 class="fw-bold text-light" style="font-size: 1rem">MENU</h1>
+
+          <ul class="m-o p-0 mt-4">
+            <li>
+              <a
+                href="./about-us.html"
+                class="fw-normal text-light"
+                style="font-size: 1rem; list-style: none; text-decoration: none"
+                >Tentang Kami</a
+              >
+            </li>
+
+            <li class="mt-3">
+              <a
+                href="./price-list.html"
+                class="fw-normal text-light"
+                style="font-size: 1rem; list-style: none; text-decoration: none"
+                >List Harga</a
+              >
+            </li>
+
+            <li class="mt-3">
+              <a
+                href="https://signstudio.netlify.app/"
+                class="fw-normal text-light"
+                style="font-size: 1rem; list-style: none; text-decoration: none"
+                >Portofolio</a
+              >
+            </li>
+
+            <li class="mt-3">
+              <a
+                href="https://signstudio.netlify.app/"
+                class="fw-normal text-light"
+                style="font-size: 1rem; list-style: none; text-decoration: none"
+                >Kontak Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-2 mt-5">
+          <h1 class="fw-bold text-light" style="font-size: 1rem">
+            HUBUNGI KAMI
+          </h1>
+
+          <ul class="m-o p-0 mt-4">
+            <li>
+              <a
+                href="tel:+62888123321"
+                class="fw-normal text-light"
+                style="font-size: 1rem; text-decoration: none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-telephone me-2 mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+                +62 888 123 321
+              </a>
+            </li>
+
+            <li class="mt-3 mb-0">
+              <p class="fw-normal text-light" style="font-size: 1rem">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-envelope me-2 mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                  />
+                </svg>
+                hello@signstudio.id
+              </p>
+            </li>
+
+            <li class="mt-0">
+              <p class="fw-normal text-light" style="font-size: 1rem">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-house-door me-2 mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                  />
+                </svg>
+                Jl. Prima Psr. VII, Deli Serdang,<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sumatera Utara
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="text-center mt-5 py-5 mx-2"
+          style="border-top: #444 1px solid"
+        >
+          <p class="fs-6 fw-normal text-light">
+            &copy; 2024 Signstudio. All rights reserved.
+          </p>
+
+          <a
+            href="https://www.instagram.com/signstudio.id/"
+            target="_blank"
+            class="fs-6 fw-normal text-light me-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              /></svg
+          ></a>
+
+          <a
+            href="https://signstudio.netlify.app/"
+            target="_blank"
+            class="fs-6 fw-normal text-light me-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-whatsapp"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top button -->
+    <button
+      type="button"
+      class="btn btn-sm btn-floating btn-lg"
+      style="border-radius: 50%"
+      id="btn-back-to-top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="21"
+        height="15"
+        fill="currentColor"
+        class="bi bi-chevron-up text-light mb-1"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+        />
+      </svg>
+    </button>
+
     <!-- bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- main JS -->
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
