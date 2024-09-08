@@ -24,10 +24,3 @@ body {
   outline: none;
   box-shadow: none;
 }
-
-.nav-slide {
-  background-color: #333;
-  border-right: #333 2px solid;
-  border-left: #333 2px solid;
-  border-bottom: #333 2px solid;
-}
